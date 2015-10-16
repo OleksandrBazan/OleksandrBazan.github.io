@@ -1,1 +1,0 @@
-# OleksandrBazan.github.io
