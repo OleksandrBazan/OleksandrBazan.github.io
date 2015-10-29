@@ -1,0 +1,152 @@
+body {
+	
+	background-image: url(../img/bg-body.jpg);
+	background-repeat:  repeat-x; 
+	font-family: tahoma;
+	line-height: 18px;
+	background-color: #0c739f;
+
+}
+.conteiner{
+	margin: 38px auto 0;
+	width: 996px;
+	height: auto;
+	background: #ffffff;
+	box-shadow: 0 4px 4px;
+	border-bottom: 2px solid black;
+}
+.header{
+	overflow: hidden;
+	position: relative;
+}
+.logo{
+	padding: 11px 0 0 37px;
+	float: left;
+}
+.contacts{
+	font-size: 12px;
+	color: #5fa5bb;
+	float: right;
+	padding: 11px 32px 0 0;
+}
+.contries{
+	margin-top: 112px;
+	overflow: hidden;
+	position: relative;
+}
+	
+.contries ul li{
+	list-style: none;
+	float: right;
+	padding-left: 17px;
+}
+.contries li:first-child{
+	padding-right: 36px;
+}
+.photo img{
+	height: 237px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+.content{
+	margin: -3px 0 0 0;
+	height: 573px;
+	width: 998px;
+	overflow: hidden;
+	background: #ffffff;
+}
+.top-menu{
+	background: #333;
+}
+.nav {
+	float: left;
+	width: 100%;
+	list-style: none;
+	background: #333;
+	font-size: 14px;
+	border-bottom: 1px solid black;
+	box-shadow: 0 5px 5px -4px;
+	position: relative;
+	z-index: 1;
+}
+.nav li{
+	float: left;
+	position: relative;
+	display: block;
+}
+.nav li a{
+	display: block;
+	padding: 5px;
+	color: #ffffff;
+	background: #333333;
+	text-decoration: none;
+	text-align: center;
+	line-height: 21px;
+	margin-left: 50px;
+}
+.nav ul{
+	list-style: none;
+	position: absolute;
+	left:-9999px;
+	opacity: 0;
+}
+.nav ul li{
+	width: 94px;
+	padding: 1px 43px 0 13px;
+    float: none;
+	background: #303030;
+	margin-left: 35px;
+}
+.nav ul a{
+	white-space: nowrap;
+	display: block;
+	margin: 0;
+	line-height: 24px;
+}
+.nav li:hover ul{
+	left: 0;
+	width: 150px;
+	opacity: 1;
+	}
+.nav li:hover ul a{
+	text-decoration: none;
+	padding-left: 5px;
+	text-align: center;
+}
+.nav li:hover ul li a:hover{
+	background: #333333;
+
+}
+.left-colum{
+	clear: both;
+	float: left;
+	width: 172px;
+	height: 531px;
+	background: #edeef0;
+	line-height: 24px;
+	padding: 10px 23px 0 15px;
+	font-size: 14px;
+	color: #424c43;
+	border-right: 1px solid #c7cacf;
+}
+.rigt-colum{
+	float: right;
+	overflow: hidden;
+	width: 172px;
+	height: 531px;
+	background: #edeef0;
+	line-height: 24px;
+	padding: 10px 23px 0 15px;
+	font-size: 14px;
+	color: #424c43;
+	border-left: 1px solid #c7cacf;
+}
+h2{
+	font-size: 18px;
+	text-align: center;
+}
+.footer{
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px 0 10px 0;
