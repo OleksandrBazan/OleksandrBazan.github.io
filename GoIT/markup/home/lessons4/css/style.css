@@ -12,7 +12,7 @@ body {
 	width: 996px;
 	height: auto;
 	background: #ffffff;
-	box-shadow: 0 4px 4px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,1);
 	border-bottom: 2px solid black;
 }
 .header{
@@ -47,6 +47,7 @@ body {
 	height: 237px;
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
+	z-index: 1;
 }
 .content{
 	margin: -3px 0 0 0;
@@ -55,73 +56,63 @@ body {
 	overflow: hidden;
 	background: #ffffff;
 }
-.top-menu{
-	background: #333;
+.top-menu {
+	width: 998px;
+	position: relative;
+	clear: both;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	width: 100%;
 }
 .nav {
-	float: left;
-	width: 100%;
-	list-style: none;
 	background: #333;
-	font-size: 14px;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,1);
 	border-bottom: 1px solid black;
-	box-shadow: 0 5px 5px -4px;
-	position: relative;
-	z-index: 1;
 }
-.nav li{
+
+.nav li {
 	float: left;
-	position: relative;
-	display: block;
-}
-.nav li a{
-	display: block;
-	padding: 5px;
-	color: #ffffff;
-	background: #333333;
-	text-decoration: none;
-	text-align: center;
-	line-height: 21px;
-	margin-left: 50px;
-}
-.nav ul{
 	list-style: none;
-	position: absolute;
-	left:-9999px;
-	opacity: 0;
+	position: relative;
 }
-.nav ul li{
-	width: 94px;
-	padding: 1px 43px 0 13px;
-    float: none;
-	background: #303030;
-	margin-left: 35px;
+.nav>li>a{
+	padding: 0 33px;
+	display: block;
+	line-height: 28px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+.nav ul {
+display: none;
+position: absolute;
+top:29px;
+left: 23px;
+background: #333;
+font-size: 14px;
+border-top: 10px;
+background: #303030;
+box-shadow: 0px 0px 4px 0px rgba(0,0,0,1);
 }
 .nav ul a{
-	white-space: nowrap;
+	padding: 0 10px;
 	display: block;
-	margin: 0;
-	line-height: 24px;
+	width: 118px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 28px;
 }
 .nav li:hover ul{
-	left: 0;
-	width: 150px;
-	opacity: 1;
-	}
-.nav li:hover ul a{
-	text-decoration: none;
-	padding-left: 5px;
-	text-align: center;
-}
-.nav li:hover ul li a:hover{
-	background: #333333;
-
+	display: block;
 }
 .left-colum{
 	clear: both;
 	float: left;
 	width: 172px;
-	height: 531px;
+	height: 534px;
 	background: #edeef0;
 	line-height: 24px;
 	padding: 10px 23px 0 15px;
@@ -133,7 +124,7 @@ body {
 	float: right;
 	overflow: hidden;
 	width: 172px;
-	height: 531px;
+	height: 534px;
 	background: #edeef0;
 	line-height: 24px;
 	padding: 10px 23px 0 15px;
