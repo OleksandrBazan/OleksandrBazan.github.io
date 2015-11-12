@@ -1,0 +1,51 @@
+body{
+	background-color:white;
+}
+table {
+	border-collapse:collapse;
+	margin: 30px auto;
+}
+tr{
+	height:60px;
+}
+td {
+	border:7px solid black;
+	padding:0px;
+	width: 50px;
+}
+td[colspan="2"]{
+	width:120px;
+}
+td[colspan="4"] {
+	width:240px;
+}
+td:last-child {
+border-right: none;
+}
+td:first-child {
+	border-left: none;
+}
+tr:first-child td{
+	border-top: none;
+}
+tr:last-child td {
+border-bottom: none;
+}
+.yellow{
+	background: yellow;
+}
+.red{
+	background: red;
+}
+.black{
+	background: black;
+}
+.blue{
+	background: blue;
+}
+.border>td{
+	border: none;
+}
+.bb{
+	border-bottom: none;
+}
