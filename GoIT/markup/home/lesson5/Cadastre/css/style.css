@@ -131,11 +131,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', end
 	width: 276px;
 	height: 35px;
 	border-radius: 8px 8px 8px 8px;
-	background: #4096ee;
-background: -moz-linear-gradient(top,  #4096ee 0%, #4096ee 100%);
-background: -webkit-linear-gradient(top,  #4096ee 0%,#4096ee 100%);
-background: linear-gradient(to bottom,  #4096ee 0%,#4096ee 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#4096ee',GradientType=0 );
+	background: #3b5496;
+background: -moz-linear-gradient(top,  #3b5496 0%, #2e4378 100%);
+background: -webkit-linear-gradient(top,  #3b5496 0%,#2e4378 100%);
+background: linear-gradient(to bottom,  #3b5496 0%,#2e4378 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5496', endColorstr='#2e4378',GradientType=0 );
+
 
 }
 .f{
@@ -155,7 +156,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', end
 	padding-left: 62px;
 	border-radius: 8px 8px 8px 8px;
 	border-top: 2px solid #7389b2;
-	border-left: 2px solid #7389b2;
 	font-size: 18px;
 	line-height: 33px;
 	
@@ -222,7 +222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', end
 	border: none;
 	border-bottom: 1px solid #494948;
 }
-.inform .text-area:hover{
+.inform .text-area:hover, .inform .text-area:focus{
 	background: #1e5799;
 background: -moz-linear-gradient(top,  #1e5799 0%, #1e4b76 0%, #207cca 100%, #7db9e8 100%, #1b5286 100%);
 background: -webkit-linear-gradient(top,  #1e5799 0%,#1e4b76 0%,#207cca 100%,#7db9e8 100%,#1b5286 100%);
