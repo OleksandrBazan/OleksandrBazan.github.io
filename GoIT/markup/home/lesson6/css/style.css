@@ -90,6 +90,7 @@ body {
 	margin-left: 4px;
 }
 .ss a{
+	vertical-align: top;
 	font-size: 11px;
 } 
 .enter{
@@ -398,6 +399,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 	margin-top: 23px;
 	margin-bottom: 30px;
 }
+.rezina:nth-child(3),.rezina:nth-child(6),.rezina:nth-child(9){
+	margin-right: 0;
+}
 .brend{
 	font-size: 15px;
 	font-weight: bold;
@@ -504,9 +508,8 @@ button{
   box-shadow: 2px 3px rgba(204,204,204,0.3);
  }
  .brend_logo{
- 	/*float: left;*/
  	margin-top: 36px;
- 	margin-left: 330px;
+ 	margin-left: 110px;
  	margin-bottom: 24px;
 }
 .brend_logo img{
