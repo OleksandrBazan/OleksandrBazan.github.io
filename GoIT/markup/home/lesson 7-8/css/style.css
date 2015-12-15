@@ -416,6 +416,9 @@ header{
 	line-height: 120px;
 
 }
+.wrapper-logo ul li:nth-child(1){
+	margin-left: 89%;
+}
 .wrapper-logo a{
 	display: block;
 	text-decoration: none;
@@ -427,7 +430,6 @@ header{
 	background: url(../img/sprite-logo.png) 0 0 no-repeat;
 }
 .spr2{
-	margin-left: 89%;
 	background: url(../img/sprite-logo.png) -76px 0 no-repeat;
 }
 .spr3{
