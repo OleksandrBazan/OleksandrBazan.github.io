@@ -90,23 +90,33 @@ body {
 	margin-left: 4px;
 }
 .ss a{
-	vertical-align: top;
+	vertical-align: center;
 	font-size: 11px;
 } 
 .enter{
 	color: #fff;
 	padding-left: 6px;
-	padding-right: 3px;
 	text-align: center;
-	border-right: 1px solid #fff;
 	letter-spacing: 1.1px;
 	text-decoration: none;
-	margin-top: 5px;
+	/*margin-top: 5px;*/
 	}
+.enter:after{
+	content: "";
+	position: relative;
+	/*left: 3px;
+	border-right: 1px solid #fff;*/
+	margin-left: 3px;
+	padding-left: 1px;
+	height: 6px;
+	background: white;
+}
+
 .registr1{
 	color: #fff;
 	padding-left: 3px;
 	text-decoration: none;
+	text-align: center;
 }
 .help{
 	color: #999;
@@ -225,7 +235,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	position: relative;
 	bottom: 3px;
 	text-decoration: none;
-	/*padding-left: px;*/
 	color: #003366;
 	font-size: 12px;
 }
@@ -333,9 +342,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 .menu_shunu li{
 	margin-top: 7px;
 }
-.menu_shunu li:last-child{
+/*.menu_shunu li:last-child{
 	margin-top: 12px;
-}
+}*/
 .menu_shunu a{
 	font-size: 14px;
 	color: #465961;
@@ -364,10 +373,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	background: url(../img/marcer_active.png);
 }
 .disci{
-	margin-top: 2px;
+	margin-top: 5px;
 }
 .bolt{
-	margin-top: 2px;
+	margin-top: 7px;
 }
 
 .tovar{
@@ -488,7 +497,7 @@ li.brend_3{
 }
 button{
 	line-height: 17px;  
-	margin-top: 7px;
+	margin-top: 23px;
 	margin-left: 25px;
 	padding-top: 3px;
 	padding-bottom: 3px;
