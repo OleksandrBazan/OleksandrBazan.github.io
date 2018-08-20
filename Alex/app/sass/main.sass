@@ -1,0 +1,431 @@
+@import "bourbon/bourbon"
+@import "../libs/font-awesome/scss/fontawesome"
+@import "../libs/font-awesome/scss/fa-brands"
+@import "../libs/font-awesome/scss/fa-solid"
+@import "../libs/font-awesome/scss/fa-regular"
+
+$w: 30px 
+$h: 3px
+
+.clearfix:after
+		content: ""
+		display: table
+		clear: both
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+section,
+.main_head
+	position: relative
+	h3
+		text-align: center
+		font-weight: 400
+		text-transform: uppercase
+		font-size: 12px
+		margin-top: 0
+		margin-bottom: 35px
+
+section
+	padding: 70px 0 90px
+	h2
+		text-transform: uppercase
+		text-align: center
+		font-size: 24px
+		margin: 0 0 20px
+		
+	.personal_header
+		font-size: 14px
+		text-align: left
+		margin-bottom: 30px
+
+	.s_descrwrap
+		text-align: center
+		.s_descr
+			position: relative
+			display: inline-block
+			text-transform: uppercase
+			font-size: 12px
+			margin-bottom: 130px
+			padding: 0 5px
+			&::after
+				position: absolute
+				content: ''
+				width: 150px
+				height: 1px
+				left: 50%
+				margin-left: -75px
+				margin-top: 70px
+.loader 
+		background: none repeat scroll 0 0 #ffffff
+		bottom: 0
+		height: 100%
+		left: 0
+		position: fixed
+		right: 0
+		top: 0
+		width: 100%
+		z-index: 9999
+
+.loader_inner 
+		background-image: url("../img/preloader.gif")
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		position: absolute
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+
+
+.main_head
+	min-height: 620px
+	padding-top: 20px
+
+.logo_container
+	float: left
+
+svg
+	width: 60px
+	height: 60px
+	z-index: 100
+	position: relative
+
+.toggle_menu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	right: 20px
+	top: 20px
+	background-color: #000
+
+.toggle_menu
+	span
+		display: block
+
+
+#sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 10px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2
+			
+	transition-delay: 0.2s, 0s
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s 
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s 
+
+#sandwich.active 
+	.sw-topper
+		top: 8px
+		transform: rotate(45deg)
+	.sw-bottom
+		top: 5px;
+		transform: rotate(-45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+.top_menu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.9)
+	z-index: 50
+	top: 0
+	left: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		margin: 0
+		padding: 0
+		display: block
+	ul
+		margin-top: 120px
+		text-align: center
+		a
+			color: #fff
+			display: block
+			padding: 20px 0
+			text-transform: uppercase
+			text-decoration: none
+			font-size: 10px
+
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	// bottom: 0
+	z-index: 10
+	background-color: rgba(0, 0, 0, .4)
+	.top_descr
+		display: table-row
+		.top_centred
+			display: table-cell
+			vertical-align: middle
+			text-align: center
+	.top_text
+		display: inline-block
+		transition: all 1s ease
+		p
+			text-transform: uppercase
+			animation-delay: 1s
+		h1
+			display: inline-block
+			color: #fff
+			text-transform: uppercase
+			border: 5px solid #fff
+			font-weight: 600
+			font-size: 2.8em  
+			background-color: rgba(0, 0, 0, .4)
+			margin: 0px 20px
+			padding: 0 20px
+			animation-delay: 1s
+
+.h_opacity
+	opacity: 0.3    
+.main_footer
+	padding: 50px 0
+	font-weight: 300
+	font-size: 13px
+	line-height: 46px
+	.social_wrap
+		float: right
+		line-height: 0
+
+
+
+.person
+	text-align: center
+	margin-bottom: 35px
+	img
+		display: inline-block
+		width: 220px
+		border-radius: 50% 
+.s_about	
+	p
+		margin-bottom: 30px
+	ul,
+	li
+		margin: 0
+		padding: 0
+		list-style-type: none
+	li
+		margin-bottom: 15px
+	.social_wrap
+		margin-top: 25px
+.social_wrap
+	li
+		display: inline-block
+		a
+			display: block
+			padding: 0px 5px
+			font-size: 20px
+.resume_container
+	.left
+		text-align: right
+		border-right: 1px solid #d2d2d2
+		h3
+			text-align: right
+		.resume_item .resume_description strong
+			margin-left: 10px
+	.right
+		text-align: left
+		h3
+			text-align: left
+		.resume_item .resume_description strong
+			margin-right: 10px
+	h3
+		margin-top: 30px
+		font-size: 16px
+		font-weight: 600 
+	.resume_icon
+		font-size: 40px
+		margin-bottom: 35px
+	.resume_item 
+		margin-bottom: 30px
+		p
+			margin-top: 10px
+		&:last-child
+			margin-bottom: 0
+			p
+				margin-bottom: 0
+		.year
+			display: inline-block
+			margin-bottom: 20px
+			padding: 0 10px
+			color: #fff
+			font-style: italic 
+	.resume_description
+		font-style: italic
+		strong
+			text-transform: uppercase
+			font-style: normal
+.s_portfolio
+	ul,
+	li
+		list-style-type: none
+		text-align: center
+		margin: 0
+		padding: 0
+		li
+			display: inline-block
+			margin: 0 5px
+			text-transform: uppercase
+			font-size: 12px
+			cursor: pointer
+			line-height: 2
+	ul
+		margin-bottom: 50px
+.portfolio_item
+	display: none //для коректной работы mixItUp
+	margin: 0
+	padding: 0
+	img
+		width: 100%
+		height: 100%
+	
+	.portf_item_cont
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: rgba( 0, 0, 0, 0.8)
+		padding-top: 15%
+		text-align: center
+		opacity: 0
+		transition: all 0.5s
+	&:hover .portf_item_cont
+		opacity: 1
+		padding-top: 20%
+	h3
+		color: #fff
+		margin-bottom: 0
+	a
+		background-color: transparent
+		border: 1px solid #fff
+		padding: 2px 10px
+		display: inline-block
+.portf_descr
+	position: relative //щоб кнопка popup знаходилась в середині блоку
+	background-color: #fff
+	max-width: 500px
+	margin: 0 auto
+	h3,
+	p
+		padding: 20px 10px 0 10px 
+	h3
+		margin-top: 10px
+		margin-bottom: 0
+		// padding-bottom: 10px
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+	img
+		width: 100%
+		margin-top: 15px
+.contact_box
+	margin-bottom: 30px
+	h3
+		text-align: left
+		color: #000
+		margin-bottom: 0px
+		font-size: 14px
+	i
+		font-size: 25px
+	p
+		margin-top: 5px	
+.main_form
+	button 
+		border: none
+		color: #fff
+		font-size: 12px
+		padding: 0 10px
+		text-transform: uppercase
+		line-height: 30px
+		font-weight: 600
+		margin-top: 10px
+		float: right
+.form-group
+	display: block
+	margin-bottom: 20px
+	input,
+	textarea
+		width: 100%
+		display: block
+		border: 1px solid #ccc
+		line-height: 30px
+		text-indent: 15px
+		margin-top: 5px
+		background-color: transparent
+
+
+
+
+
+
+
+
+

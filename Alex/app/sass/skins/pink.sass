@@ -1,0 +1,103 @@
+@import "../bourbon/bourbon"
+
+$color: #e410e9 //Theme skin
+$text_color: #888
+$main_color: #222     
+$bg_light: #FAFAFA
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p,
+body .main_footer,
+.s_about li
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.bg_light
+	background-color: $bg_light
+	color: #555
+.bg_darck
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #fff
+.color_border
+	border-color: $color
+
+.main_color_bg
+	background-color: $main_color
+
+svg
+	path
+		fill: $text_color
+		
+
+.top_menu
+	a:hover
+		color: $color 
+		background-color: rgba( 255, 255,255, 0.1) 
+		transition: (all 0.5s ease)
+	a	
+		+kerning(4)
+.s_descr
+	+kerning(5)
+	&::after
+		background-color: $main_color
+
+section
+	h3
+		+kerning(3)
+	.personal_header
+		+kerning(2)
+.s_about	
+	p:nth-child(even)
+		color: $color
+.resume_container
+	h3
+		color: $main_color
+		+kerning(1)
+.resume_item 
+	.year
+		background-color: $color
+.s_portfolio
+	li
+		color: $text_color
+		+kerning(2)
+		&.active
+			color: #fff
+			border-bottom: 1px solid $color
+#portfolio_grid 
+	.portfolio_item 
+		.portf_item_cont 
+			a
+				color: $color
+				border-color: $color
+.contact_box
+	i
+		color: $color
+.text-danger
+	color: $color
+
+.main_form 
+	.form-group
+		input:focus,
+		textarea:focus
+			border: 1px solid $color
+button
+	background-color: $color
+	+kerning(2)
+	
+
+
+
